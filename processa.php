@@ -1,7 +1,7 @@
 <?php
 include("conexao.php"); // Importa a conexão
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") { // Seleciona todos os dados da tabela "nome, email e etc...", junto com o method post que tem que colocar no html tambem //
     $nome = $_POST["nome"];
     $Email = $_POST["Email"];
     $telefone = $_POST["telefone"];
