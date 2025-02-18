@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20,147,220),rgb(17,54,71) );
+}
+.box{  /* posiciona a box/div */
+    color: white; /* colocar ele la em cima para deixar com a fonte branca */
+    position: absolute;
+    top: 50%;         
+    left: 50%;                             /*esses cinco aqui posicionaram a div/box no lugar */
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px; /*é a distancia entre os elementos e a borda*/
+    border-radius: 15px; /*arruma a borda da box*/
+    width: 20%; /* aumenta a largura da box */
+}
+fieldset{   /* cria uma borda em volta da box */
+    border: 3px solid dodgerblue; /* coloca uma cor azul na borda que vc criou */
+}
+legend{
+    border:1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border: 8px;
+}
+.inputBox{     /*tem que ser em maiusculo o inputBox*/
+    position: relative;
+}
+.inputUser{             /*tem que ser em maiusculo o inputUser*/
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none; /* quando clicar a linha em volta da caixa */
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px; /* aumenta o espaço entre cada caractere */
+}
+.labelInput{
+ position:absolute;
+ top:0px;
+ left:0px;
+ pointer-events: none; /* qualquer lugar que eu clicar no input ele vai executar a ação */
+ transition:.5s;
+}
+.inputUser:focus ~ .labelInput, /* da uns efeitos no label "email, telefone e etc */
+.inputUser:valid ~ .labelInput{
+    top:-20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(0,92,197), rgb(90,20,220));  /*colore o fundo do botao ou de qualquer outra coisa, deixando meio que um degrade */
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;  /*muda o cursor quando passa por cima do botao */
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0,80,172), rgb(80,19,195));
+}
+
+
