@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Seleciona todos os dados da tabel
     if ($conexao->query($sql) === TRUE) { // o query é um método da classe mysqli usado para executar comandos SQL no banco de dados.
         echo "Usuário cadastrado com sucesso! ";  
         echo '<button style="background-color:rgb(38, 3, 196); color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background 0.3s;" onclick="window.location.href=\'index.html\'">Voltar à Página Inicial</button>'; 
+        // Estilizei o proprio botao em css no prorio codigo, tudo aqui dentro do parenteses, ja que o php nao cria botao de fato e precisa do html para fazer um
     } else {
         echo "Erro: " . $conexao->error;
         echo '<button style="background-color: #e74c3c; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background 0.3s;" onclick="window.location.href=\'index.html\'">Voltar à Página Inicial</button>';
