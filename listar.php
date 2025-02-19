@@ -2,7 +2,7 @@
 include("conexao.php");
 
 $sql = "SELECT * FROM usuarios";
-$resultado = $conexao->query($sql);
+$resultado = $conexao->query($sql); // o query é um método da classe mysqli usado para executar comandos SQL no banco de dados.
 
 if ($resultado->num_rows > 0) {
     echo "<ul>";
